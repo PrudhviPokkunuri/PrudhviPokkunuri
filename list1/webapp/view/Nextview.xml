@@ -1,0 +1,20 @@
+<mvc:View
+    controllerName="ui.List.project1.controller.Nextview"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core" >
+       <App id="45">
+         <Page id="46">
+           <Label id="67" text="Rjy" />
+            <footer>
+             <Toolbar>
+               <ToolbarSpacer/>
+               <Button type="Emphasized" text="Back" press="onPressBack"/>
+             </Toolbar
+            </footer>
+         </Page>
+       </App>
+</mvc:View>

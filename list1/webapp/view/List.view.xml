@@ -1,0 +1,28 @@
+<mvc:View
+    controllerName="ui.firstapp.list1.controller.List"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m">
+    <App id="app">
+        <pages>
+            <List id="idList" items ="{path :'mNewproductmodel>/ProductCollection',
+                                       sorter:
+                                        {
+                                           path:'Category',
+                                           descending:false,
+                                           group:true
+                                        }
+                                    }">
+                <headerToolbar>
+                    <OverflowToolbar id="oft">
+                        <Title id="tt" class="CustomCss" text="ProductList"/>
+                        <ToolbarSpacer id="tbs"/>
+                        <SearchField id="sf" liveChange=".onSearch" width="50%" />
+                    </OverflowToolbar>
+                </headerToolbar>
+                <StandardListItem id="slt" title="{mNewproductmodel>Name}"
+                description="Product Id : {mNewproductmodel>ProductId} Price: {mNewproductmodel>Price}"/>
+            </List>
+        </pages>
+    </App>
+</mvc:View>
